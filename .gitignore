@@ -1,0 +1,83 @@
+# ──────────────────────────────────────────────────────────────────────
+# Quantara — .gitignore
+# ──────────────────────────────────────────────────────────────────────
+
+# ─── Dependencies ────────────────────────────────────────────────────
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ─── Build outputs ───────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+
+# ─── Environment & Secrets ───────────────────────────────────────────
+.env
+.env.*
+!.env.example
+service-account.json
+*.pem
+*.key
+*.p12
+*.jks
+
+# ─── Firebase / GCP Credentials ─────────────────────────────────────
+firebase-debug.log
+firebase-debug.*.log
+.firebaserc
+firebase-export-*
+
+# ─── IDEs & Editors ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS specific ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─── Data files ──────────────────────────────────────────────────────
+transactions.csv
+result.json
+test.csv
+test_result.json
+results.json
+*.log
+startup_log.txt
+check_out.txt
+last_500_error.txt
+
+# ─── Metrics & Debug output (internal only) ──────────────────────────
+metrics.txt
+metrics_output.txt
+metrics_final.json
+metrics_money_mulling.json
+sample_output.json
+query
+
+# ─── Database ────────────────────────────────────────────────────────
+*.db
+*.sqlite3
+
+# ─── Execution layer caches ──────────────────────────────────────────
+execution/__pycache__/
+
+# ─── Test scripts with hardcoded paths (internal dev only) ───────────
+backend/test_detector.py
+backend/test_req.py
+backend/test_startup.py
+backend/run_test.bat
+backend/check_metrics.py
+
+# ─── Unused / personal media ─────────────────────────────────────────
+frontend/public/WhatsApp*
+frontend/public/vite.svg
+frontend/src/assets/react.svg
